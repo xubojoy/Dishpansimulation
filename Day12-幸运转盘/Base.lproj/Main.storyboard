@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiK-y5-L5a">
+                                <rect key="frame" x="167.5" y="32" width="40" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="双色球">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-2U-nno">
+                                <rect key="frame" x="104.5" y="59" width="34" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="双色球">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNI-g6-m6L">
+                                <rect key="frame" x="238.5" y="59" width="30" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="5注">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LuckyThreeButton" translatesAutoresizingMaskIntoConstraints="NO" id="2SO-PB-9fM">
+                                <rect key="frame" x="98" y="18" width="180" height="82"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qCr-2U-nno" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="1LM-8Y-a7D"/>
+                            <constraint firstItem="2SO-PB-9fM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="18" id="FUl-NI-Xhx"/>
+                            <constraint firstItem="jiK-y5-L5a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JzF-Z1-jI1"/>
+                            <constraint firstItem="pNI-g6-m6L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="KVl-H0-mXa"/>
+                            <constraint firstItem="qCr-2U-nno" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-66" id="fh0-Pv-cxb"/>
+                            <constraint firstItem="pNI-g6-m6L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="66" id="fiX-Gn-rQI"/>
+                            <constraint firstItem="jiK-y5-L5a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="i9b-nI-ri1"/>
+                            <constraint firstItem="2SO-PB-9fM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s2f-C8-gE5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LuckyThreeButton" width="180" height="82"/>
+    </resources>
+</document>
